@@ -1,0 +1,131 @@
+#home-page main .slider{
+    display: flex;
+    width: 100vw;
+    height: 350px;
+    margin-top: 42px;
+}
+
+#home-page main .slider ul{
+    display: flex;
+    position: relative;
+}
+
+#home-page main .slider ul input{
+    display: block;
+    color: blueviolet;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 300px;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 20px;
+    z-index: 10;
+    
+}
+
+
+#home-page main .slider ul li:nth-child(1) input {
+    left: 620px;
+}
+
+#home-page main .slider ul li:nth-child(2) input {
+    left: 650px;
+}
+
+#home-page main .slider ul li:nth-child(3) input {
+    left: 680px;
+}
+
+#home-page main .slider ul li img{
+    display: flex;
+    position: absolute;
+    width: 75vw;
+    height: 378px;
+    margin-left: 150px;
+    animation:backwards;
+}
+
+
+#home-page main .info ul{
+    display: flex;
+    flex: 1;
+    justify-content: center;      
+
+}
+
+#home-page main .info ul li{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 50px;
+    height: 63px;
+
+}
+#home-page main .info ul li img{
+    width: 56px;
+    height: 56px;
+    
+}
+h3 ,p{
+    font-family: 'Kanit', sans-serif;
+}
+.container{
+    background-color: palevioletred;
+    width: 100vw;
+    height: 0.5vh;
+}
+
+.footer_end{
+    display: flex;
+    flex: 1;
+    height: 50vh;
+    background-color: #bfbbbbf7;
+    margin-top: 18px;
+}
+.footer_end nav ul{
+    display: flex;
+    flex: 1;
+    justify-content: center; ;
+}
+.footer_end nav ul li{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 50px;
+    font-family: 'Kanit', sans-serif;
+}
+
+footer .copy p{
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column a{
+    display: block;
+    font-size:  15px;
+    text-decoration: none;
+    
+}
+
+.column a:hover{
+    text-decoration: solid;
+    color: blueviolet;
+}
+
+.column a img{
+    display: flex;
+    flex: 1;
+    width: 256px;
+    height: 128px;
+   
+}

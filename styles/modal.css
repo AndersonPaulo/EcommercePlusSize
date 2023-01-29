@@ -1,0 +1,149 @@
+#modal{
+    background-color: #0E0A14ef;
+    height: 25vh;
+    width: 100vw;
+    position: fixed;
+    top: 125px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+#modal img{
+    display: flex;
+    flex:1;
+    position: relative;
+    bottom: 20px;
+    left: 700px;
+    width: 36px;
+    height: 66px;
+    cursor: pointer;
+    transition: 400ms;
+    z-index: 5;
+}
+#modal.hide{
+    display: none;
+}
+
+#modal .content{
+    color: white;
+    width: 420px;
+}
+
+#modal form input{
+    display: flex;
+    flex: 1;
+    background-color: #f0f0f5;
+    border-radius:  8px 0 9 8px;
+    width: 45vw;
+    border: 0;
+    padding: 16px 24px;
+    color: #6c6c80;
+
+}
+#modal_form_login.hide{
+    display: none;
+}
+#modal_form_login{
+    background-color: #0E0A14ef;
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+    top: 125px;
+    display: flex;
+    margin-left: 400px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: 400ms;
+
+}
+
+
+#modal_form_login .content{
+    display: flex;
+    width: 25vw;
+}
+#modal_form_login .content form fieldset{
+    border:0;
+}
+#modal_form_login .fiel_group{
+    display: flex;
+    flex: 1;
+    flex-direction: column;    
+}
+
+form input{
+    background-color: #f0f0f5;
+    border:0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form button{
+    width: 160px;
+    height: 48px;
+    background-color: #6c6c80;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 35px ;
+    cursor: pointer;
+    transition: 400ms;    
+}
+
+form button:hover{
+    background-color: blueviolet;
+}
+form span{
+    margin-left: 55px;
+}
+#modal_shopping{
+    display: flex;
+    flex: 1;
+    position: fixed;
+    top: 125px;
+    background-color: #0E0A14ef;
+    width: 35vw;
+    height: 70vh;
+    margin-left: 870px;
+    justify-content: center;
+}
+#modal_shopping.hide{
+    display: none;
+}
+
+#modal_shopping .content span h3{
+    margin-top: 25px;
+}
+
+#modal_shopping .button{
+    display: flex;
+    flex: 1;
+    margin-top: 250px;
+    width: 100px;
+    height: 45px;
+    background-color: #6c6c80;
+    border-radius: 16px;
+    box-shadow:black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+#modal_shopping .button:hover{
+    background-color: aqua;
+    color: pink;
+}
+

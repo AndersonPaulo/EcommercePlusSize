@@ -1,0 +1,68 @@
+#top{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    font-family:'Kanit', sans-serif;
+}
+#home-page .content{
+    display: flex;
+    flex:1;
+    height: 15vh;
+    background-color: #f3cae7;
+    box-shadow: 10px 5px 5px black;
+    justify-content: space-around;
+    align-items: center ;
+
+}
+#home-page .content a #logo img{
+    margin-top: 28px;
+    height: 128px;
+    width: 128px;
+
+}
+
+#home-page .content ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+#home-page .content ul li a{
+    text-decoration-line: none;
+    color: black;
+}
+
+#home-page .content ul li:hover{
+    box-shadow: inset 0 0 0.1em gold, 0 0 0.1em red;
+    border-radius: 8px;
+
+}
+
+#home-page .content ul li a:hover{
+    color: palevioletred;
+    
+}
+
+#home-page header #login img{
+    display: flex;
+    width: 22px;
+    height: 22px;
+
+}
+
+#home-page header #shopping img{
+    display: flex;
+    width: 22px;
+    height: 22px;
+}
+
+#home-page header #search img{
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
