@@ -1,14 +1,19 @@
 //variáveis modal Busca
 const buttonSeach = document.querySelector('#search img')
 const modal = document.querySelector('#modal')
-const close = document.querySelector('#modal a')
+let showSearch = true
 
 //funcao de evento Modal click
 buttonSeach.addEventListener("click",() =>{
-    modal.classList.remove("hide")
+    
+    if(showSearch == true){
+        modal.classList.remove("hide")
+        showSearch = false
+    }else{
+        modal.classList.add("hide")
+        showSearch = true
+    }
 })
 
-close.addEventListener("click",() =>{
 
-    modal.classList.add("hide")
-})
+

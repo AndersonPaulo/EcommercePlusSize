@@ -1,7 +1,7 @@
 #modal{
     background-color: #0E0A14ef;
     height: 25vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 125px;
     display: flex;
@@ -9,19 +9,10 @@
     align-content: center;
     align-items: center;
     transition: 400ms;
+    border-radius: 8px;
+
 }
-#modal img{
-    display: flex;
-    flex:1;
-    position: relative;
-    bottom: 20px;
-    left: 700px;
-    width: 36px;
-    height: 66px;
-    cursor: pointer;
-    transition: 400ms;
-    z-index: 5;
-}
+
 #modal.hide{
     display: none;
 }
@@ -57,6 +48,8 @@
     align-content: center;
     align-items: center;
     transition: 400ms;
+    border-radius: 8px;
+
 
 }
 
@@ -116,13 +109,19 @@ form span{
     height: 70vh;
     margin-left: 870px;
     justify-content: center;
+    border-radius: 8px;
+
 }
 #modal_shopping.hide{
     display: none;
 }
 
+#modal_shopping .content h2{
+    color: white;
+}
 #modal_shopping .content span h3{
     margin-top: 25px;
+    color: white;
 }
 
 #modal_shopping .button{
@@ -143,7 +142,7 @@ form span{
 }
 
 #modal_shopping .button:hover{
-    background-color: aqua;
+    background-color: blueviolet;
     color: pink;
 }
 
