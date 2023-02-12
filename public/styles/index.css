@@ -11,7 +11,7 @@
     height: 15vh;
     background-color: #f3cae7;
     box-shadow: 10px 5px 5px black;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center ;
 
 }
@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     gap: .8rem;
     list-style-type: none;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Kanit', sans-serif;
     
 }

@@ -24,30 +24,32 @@
     display: block;
     background-color: blueviolet;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 450px;
+    width: 18px;
+    height: 18px;
+    top: 470px;
     cursor: pointer;
     transition: 400ms;
     z-index: 5;
+    border: 3px solid #000000f7;
+    border-radius: 5px;
     
 }
 
 #home-page main .slider ul li:nth-child(1) label{
-    left: 620px;
+    left: 740px;
 }
 #home-page main .slider ul li:nth-child(2) label{
-    left: 650px;
+    left: 770px;
 }
 #home-page main .slider ul li:nth-child(3) label{
-    left: 680px;
+    left: 800px;
 }
 #home-page main .slider ul li img{
     display: flex;
     position: absolute;
     width: 75vw;
     height: 378px;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 #home-page main .slider ul li img:hover{
     cursor: pointer;
@@ -67,7 +69,8 @@
     list-style-type: none;
     padding: 50px;
     height: 63px;
-
+    align-content: center;
+    align-items: center;
 }
 #home-page main .info ul li img{
     width: 56px;
@@ -88,6 +91,7 @@ h3 ,p{
     height: 50vh;
     background-color: #bfbbbbf7;
     margin-top: 18px;
+    justify-content: space-around;
 }
 .footer_end nav ul{
     display: flex;
@@ -114,6 +118,8 @@ footer .copy p{
     position: relative;
     flex-direction: column;
     justify-content: center;
+    margin-top: 18px;
+    right:110px;
 }
 
 .column a{
@@ -143,6 +149,10 @@ footer .copy p{
     bottom:25px;
    
 }
+.column .pag img{
+    right:110px;
+}
+
 .column .SocialMidia img:hover{
     cursor: pointer;
 }
