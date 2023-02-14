@@ -1,78 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>ModaPlusSize</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="./assets/icon.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/index.css">
-        <link rel="stylesheet" href="./styles/index-main.css">
-        <link rel="stylesheet" href="./styles/modal.css">
-        <link rel="stylesheet" href="./styles/responsive.css">
+{% extends "layout.html"%}
+
+{% set pageId = "home-page" %}
         
-    </head>
-    <body>
-        <div id="home-page">
-           {% include "partials/page-header.html" %}
-            <main>
-                <div class="slider">
-                    <nav>
-                        <ul>
-                          
-                            <li  class="box-img">
-                                <input type="radio" name="slide1" id="slide1" checked >
-                                <label for="slide1" style="background-color:deeppink;"></label>
-                                <img src="./assets/um.png" alt="imagen2" >
-                            </li>
-                            <li  class="box-img">
-                                <input type="radio" name="slide2" id="slide2" >
-                                <label for="slide2"></label>
-                                <img src="./assets/dois.png" alt="imagen3" style="display:none;">
-                            </li>
-                            <li class="box-img">
-                                <input type="radio" name="slide3" id="slide3" >
-                                <label for="slide3"></label>
-                                <img src="./assets/tres.png" alt="imagen4"style="display:none;">
-                            </li>
+{% block title %}
+            <title>ModaPlusSize</title>
+{% endblock title %}      
+   
+                
+{% block content %}
+    <div class="slider">
+        <nav>
+            <ul>
+                
+                <li  class="box-img">
+                    <input type="radio" name="slide1" id="slide1" checked >
+                    <label for="slide1" style="background-color:deeppink;"></label>
+                    <img src="./assets/um.png" alt="imagen2" >
+                </li>
+                <li  class="box-img">
+                    <input type="radio" name="slide2" id="slide2" >
+                    <label for="slide2"></label>
+                    <img src="./assets/dois.png" alt="imagen3" style="display:none;">
+                </li>
+                <li class="box-img">
+                    <input type="radio" name="slide3" id="slide3" >
+                    <label for="slide3"></label>
+                    <img src="./assets/tres.png" alt="imagen4"style="display:none;">
+                </li>
 
-                        </ul>
-                    </nav>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>
-                            <img src="./assets/delivery-svgrepo-com.svg" alt="frete gratis">
-                            <h3>FRETE GRÁTIS</h3>
-                            <p>Compras acima de R$ 299,00</p>
-                        </li>
-                        <li>
-                            <img src="./assets/synchronize-svgrepo-com.svg" alt="troca gratis">
-                            <h3>TROCA GRÁTIS</h3>
-                            <p>Em até 30 dias!</p>
-                        </li>
-                        <li>
-                            <img src="./assets/credit-card-svgrepo-com.svg" alt="até 6 vezes sem juros">
-                            <h3>ATÉ 6X SEM JUROS</h3>
-                            <p>Nos cartões</p>
-                        </li>
-                        <li>
-                            <img src="./assets/free-deposit-svgrepo-com.svg" alt="pix ou boleto">
-                            <h3>5% A VISTA</h3>
-                            <p>Pix ou Boleto</p>
-                    </li>
-                    </ul>
-                </div>
-                <div class="container">
+            </ul>
+        </nav>
+    </div>
+    <div class="info">
+        <ul>
+            <li>
+                <img src="./assets/delivery-svgrepo-com.svg" alt="frete gratis">
+                <h3>FRETE GRÁTIS</h3>
+                <p>Compras acima de R$ 299,00</p>
+            </li>
+            <li>
+                <img src="./assets/synchronize-svgrepo-com.svg" alt="troca gratis">
+                <h3>TROCA GRÁTIS</h3>
+                <p>Em até 30 dias!</p>
+            </li>
+            <li>
+                <img src="./assets/credit-card-svgrepo-com.svg" alt="até 6 vezes sem juros">
+                <h3>ATÉ 6X SEM JUROS</h3>
+                <p>Nos cartões</p>
+            </li>
+            <li>
+                <img src="./assets/free-deposit-svgrepo-com.svg" alt="pix ou boleto">
+                <h3>5% A VISTA</h3>
+                <p>Pix ou Boleto</p>
+        </li>
+        </ul>
+    </div>
+    <div class="container">
 
-                </div>
-
-            </main>
- 
         </div>
+{% endblock content %}
+
+ 
+{% block scripts %}
+    <script src="./scripts/slider.js"></script>
+{% endblock scripts %}
         
-    </body>
-    {% include "partials/page-footer.html" %}
-</html>

@@ -10,6 +10,7 @@
     align-items: center;
     transition: 400ms;
     border-radius: 8px;
+    z-index: 9;
 
 }
 
@@ -49,6 +50,7 @@
     align-items: center;
     transition: 400ms;
     border-radius: 8px;
+    z-index: 9;
 
 
 }
@@ -110,6 +112,8 @@ form span{
     margin-left: 870px;
     justify-content: center;
     border-radius: 8px;
+    z-index: 9;
+
 
 }
 #modal_shopping.hide{

@@ -8,5 +8,5 @@ body{
 }
 header{
     height: 15vh;
-    z-index: 10;
+    /* z-index: 10; */
 }

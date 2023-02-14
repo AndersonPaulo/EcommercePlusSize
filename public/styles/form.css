@@ -1,0 +1,73 @@
+main .content{
+    display: flex;
+    flex: 1;
+    background-color: white;
+    margin-top: 300px;
+    margin-bottom: 270px;
+}
+.content form{
+    background-color: #ff8bc7;
+    display: flex;
+    flex:1;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 8px;
+    max-height: 480px;
+    max-width: 780px;
+    margin: 80px auto;
+    padding: 64px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.content form fieldset{
+    border: 0;
+    margin-top: 10px;
+}
+.content form .field-group{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.content form .field{
+ display: flex;
+ flex: 1;
+ flex-direction: column;
+ margin-bottom: 6px;   
+}
+.content form input,form textarea,form select{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 8px 24px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+}
+.content form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.content form label{
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'Kanit', sans-serif;
+}
+.content form button{
+    width: 260px;
+    height: 56px;
+    background-color: #868183;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin: 0 100px 10px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.content form button:hover{
+    background-color: blue;
+}
+

@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/index-main.css">
     <link rel="stylesheet" href="./styles/modal.css">
@@ -18,51 +19,52 @@
         {% include "partials/page-header.html" %}
         <main>
             <div class="content">
-            <form action="">
-                <fieldset>
-                    <div class="field-group">
-                        <div class="field">
-                            <label for="name">Nome Completo</label>
-                            <input type="name" name="nome" placeholder="nome">
+                <form action="">
+                    <fieldset>
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="name">Nome Completo</label>
+                                <input type="name" name="nome" placeholder="nome" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field-group">
-                        <div class="field">
-                             <label for="email">E-mail</label>
-                             <input type="email" name="email" placeholder="e-mail">
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="e-mail" required>
+                            </div>
                         </div>
-                    </div>
-                      <div class="field-group">
-                        <div class="field">
-                          <label for="state">Estado</label>
-                          <select name="uf">Selecione o Estado
-                             <option value="">Selecione o Estado</option>
-                          </select>
-                         <input type="hidden" name="state">  
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="state">Estado</label>
+                                <select name="uf" required>Selecione o Estado
+                                    <option value="">Selecione o Estado</option>
+                                </select>
+                                <input type="hidden" name="state">  
+                            </div>
+                            <div class="field">
+                                <label for="city">Cidade</label>
+                                <select name="city" required>
+                                    <option value="">Selecione a Cidade</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                        <div class="field">
-                             <label for="city">Cidade</label>
-                             <select name="city">
-                                <option value="">Selecione a Cidade</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="field-group">
-                        <div class="field">
-                           <label for="tel">Telefone</label>
-                                <input type="tel" name="telefone" placeholder="tel">
-                        </div>
-                    </div>    
-                    <div class="field-group">   
-                       <div class="field">
-                            <label for="menssagem">Mensagem</label>
-                             <textarea name="mensagem" cols="40" rows="3" maxlength="500" placeholder="..."></textarea>
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="tel">Telefone</label>
+                                <input type="tel" name="telefone" placeholder="tel" required>
+                            </div>
+                        </div>    
+                        <div class="field-group">   
+                            <div class="field">
+                                <label for="menssagem">Mensagem</label>
+                                <textarea name="mensagem" cols="40" rows="3" maxlength="500" placeholder="..." required></textarea>
 
-                       </div>
-                   </div>     
-                </fieldset>
-            </form>
+                            </div>
+                        </div>     
+                          <button type="submit">Enviar</button>
+
+                    </fieldset>
+                </form>
             </div>
         </main>
     </div>    
