@@ -15,5 +15,13 @@ server.get("/",(req,res)=>{
 server.get("/contato",(req,res)=>{
     return res.render("contato.html")
 })
-
+server.get("/somos",(req,res)=>{
+    return res.render("somos.html")
+})
+server.get("/entrega",(req,res)=>{
+    return res.render("entrega.html")
+})
+server.get("/politicaDeDevolucao",(req,res)=>{
+    return res.render("politicaDeDevolucao.html")
+})
 server.listen(3000)
