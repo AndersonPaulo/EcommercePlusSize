@@ -26,7 +26,7 @@
                         <div class="field-group">
                             <div class="field">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" placeholder="e-mail" required>
+                                <input type="email" name="email" placeholder="example@example.com" required>
                             </div>
                         </div>
                         <div class="field-group">
@@ -47,7 +47,7 @@
                         <div class="field-group">
                             <div class="field">
                                 <label for="tel">Telefone</label>
-                                <input type="tel" name="telefone" placeholder="tel" required>
+                                <input type="tel" name="telefone" placeholder="21888-8888" required>
                             </div>
                         </div>    
                         <div class="field-group">   
@@ -65,5 +65,9 @@
         </main>
 
 {% endblock content %}
+
+{% block scripts %}
+<script src="./scripts/contato.js"></script>
+{% endblock scripts %}
   
        

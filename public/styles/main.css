@@ -8,5 +8,52 @@ body{
 }
 header{
     height: 15vh;
-    /* z-index: 10; */
+}
+main .somos{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+    margin-left: 250px;
+    padding: 60px;
+}
+main .somos h2{
+    margin-top: 20px;
+}
+main .somos p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+main .entrega{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+    margin-left: 250px;
+    padding: 60px;
+}
+main .entrega h2{
+    margin-top: 20px;
+}
+main .entrega p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+main .devolucao{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+    margin-left: 250px;
+    padding: 60px;
+}
+main .devolucao h2{
+    margin-top: 20px;
+}
+main .devolucao p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
