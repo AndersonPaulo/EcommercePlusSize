@@ -1,9 +1,9 @@
 #modal{
     background-color: #0E0A14ef;
-    height: 25vh;
+    height: 13vh;
     width: 100%;
     position: fixed;
-    top: 125px;
+    top: 62.5px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -20,7 +20,7 @@
 
 #modal .content{
     color: white;
-    width: 420px;
+    width: 210px;
 }
 
 #modal form input{
@@ -30,7 +30,7 @@
     border-radius:  8px 0 9 8px;
     width: 45vw;
     border: 0;
-    padding: 16px 24px;
+    padding: 8px 12px;
     color: #6c6c80;
 
 }
@@ -39,12 +39,12 @@
 }
 #modal_form_login{
     background-color: #0E0A14ef;
-    height: 50vh;
+    height: 25vh;
     width: 50vw;
     position: fixed;
-    top: 125px;
+    top: 62.5px;
     display: flex;
-    margin-left: 400px;
+    margin-left: 200px;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -52,13 +52,11 @@
     border-radius: 8px;
     z-index: 9;
 
-
 }
-
 
 #modal_form_login .content{
     display: flex;
-    width: 25vw;
+    width: 12vw;
 }
 #modal_form_login .content form fieldset{
     border:0;
@@ -72,25 +70,25 @@
 form input{
     background-color: #f0f0f5;
     border:0;
-    padding: 16px 24px;
-    font-size: 16px;
+    padding: 8px 12px;
+    font-size: 8px;
     outline: none;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 form button{
-    width: 160px;
-    height: 48px;
+    width: 80px;
+    height: 28px;
     background-color: #6c6c80;
     border-radius: 8px;
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 8px;
     border: 0;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 35px ;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-left: 17.5px ;
     cursor: pointer;
     transition: 400ms;    
 }
@@ -99,17 +97,17 @@ form button:hover{
     background-color: blueviolet;
 }
 form span{
-    margin-left: 55px;
+    margin-left: 27.5px;
 }
 #modal_shopping{
     display: flex;
     flex: 1;
     position: fixed;
-    top: 125px;
+    top: 62.5px;
     background-color: #0E0A14ef;
     width: 35vw;
-    height: 70vh;
-    margin-left: 870px;
+    height: 35vh;
+    margin-left: 315px;
     justify-content: center;
     border-radius: 8px;
     z-index: 9;
@@ -131,16 +129,16 @@ form span{
 #modal_shopping .button{
     display: flex;
     flex: 1;
-    margin-top: 250px;
-    width: 100px;
-    height: 45px;
+    margin-top: 125px;
+    width: 50px;
+    height: 22.5px;
     background-color: #6c6c80;
     border-radius: 16px;
     box-shadow:black;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 10px;
     font-family: sans-serif;
     color: white;
 }
@@ -149,4 +147,156 @@ form span{
     background-color: blueviolet;
     color: pink;
 }
-
+@media(min-width:700px){
+    #modal{
+        background-color: #0E0A14ef;
+        height: 25vh;
+        width: 100%;
+        position: fixed;
+        top: 125px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        transition: 400ms;
+        border-radius: 8px;
+        z-index: 9;
+    
+    }
+    
+    #modal.hide{
+        display: none;
+    }
+    
+    #modal .content{
+        color: white;
+        width: 420px;
+    }
+    
+    #modal form input{
+        display: flex;
+        flex: 1;
+        background-color: #f0f0f5;
+        border-radius:  8px 0 9 8px;
+        width: 45vw;
+        border: 0;
+        padding: 16px 24px;
+        color: #6c6c80;
+    
+    }
+    #modal_form_login.hide{
+        display: none;
+    }
+    #modal_form_login{
+        background-color: #0E0A14ef;
+        height: 50vh;
+        width: 50vw;
+        position: fixed;
+        top: 125px;
+        display: flex;
+        margin-left: 400px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        transition: 400ms;
+        border-radius: 8px;
+        z-index: 9;
+    
+    }
+    
+    #modal_form_login .content{
+        display: flex;
+        width: 25vw;
+    }
+    #modal_form_login .content form fieldset{
+        border:0;
+    }
+    #modal_form_login .fiel_group{
+        display: flex;
+        flex: 1;
+        flex-direction: column;    
+    }
+    
+    form input{
+        background-color: #f0f0f5;
+        border:0;
+        padding: 16px 24px;
+        font-size: 16px;
+        outline: none;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    
+    form button{
+        width: 160px;
+        height: 48px;
+        background-color: #6c6c80;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border: 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 35px ;
+        cursor: pointer;
+        transition: 400ms;    
+    }
+    
+    form button:hover{
+        background-color: blueviolet;
+    }
+    form span{
+        margin-left: 55px;
+    }
+    #modal_shopping{
+        display: flex;
+        flex: 1;
+        position: fixed;
+        top: 125px;
+        background-color: #0E0A14ef;
+        width: 35vw;
+        height: 70vh;
+        margin-left: 870px;
+        justify-content: center;
+        border-radius: 8px;
+        z-index: 9;
+    
+    
+    }
+    #modal_shopping.hide{
+        display: none;
+    }
+    
+    #modal_shopping .content h2{
+        color: white;
+    }
+    #modal_shopping .content span h3{
+        margin-top: 25px;
+        color: white;
+    }
+    
+    #modal_shopping .button{
+        display: flex;
+        flex: 1;
+        margin-top: 250px;
+        width: 100px;
+        height: 45px;
+        background-color: #6c6c80;
+        border-radius: 16px;
+        box-shadow:black;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: white;
+    }
+    
+    #modal_shopping .button:hover{
+        background-color: blueviolet;
+        color: pink;
+    }
+    
+    
+}
