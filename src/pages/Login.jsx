@@ -1,14 +1,14 @@
-import React from 'react'
-
-function Login() {
+function AdminLogin() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h2 className="text-2xl font-bold mb-4">Login Admin</h2>
-      <input type="text" placeholder="Usuário" className="border p-2 mb-3 w-64" />
-      <input type="password" placeholder="Senha" className="border p-2 mb-3 w-64" />
-      <button className="bg-blue-900 text-white px-6 py-2 rounded">Entrar</button>
-    </div>
+    <main className="pt-20 p-6 flex flex-col items-center">
+      <h1 className="text-2xl font-bold mb-6">Login Administrativo</h1>
+      <form className="w-full max-w-sm space-y-4">
+        <input type="email" placeholder="E-mail" className="w-full border p-2 rounded" />
+        <input type="password" placeholder="Senha" className="w-full border p-2 rounded" />
+        <button className="w-full px-4 py-2 bg-gray-800 text-white rounded">Entrar</button>
+      </form>
+    </main>
   );
 }
 
-export default Login
+export default AdminLogin;
