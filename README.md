@@ -53,11 +53,33 @@ npm run dev
 
 ```
 /src
-├── /components        # Componentes reutilizáveis
-├── /pages             # Páginas do site e admin
-├── /routes            # Definição de rotas
-├── App.jsx            # Componente principal
-├── main.jsx           # Entrada da aplicação
+  /components
+    Navbar.jsx
+    ProductCard.jsx
+    ProductList.jsx
+    Cart.jsx
+    LoginAdmin.jsx
+    AdminPanel.jsx
+    ProductForm.jsx
+  /pages
+    Home.jsx
+    Produtos.jsx
+    Carrinho.jsx
+    Login.jsx
+    Admin.jsx
+  /routes
+    AppRoutes.jsx
+  App.jsx
+  main.jsx
+  /data
+    produtos.json
+/public
+  /images
+    (as imagens dos produtos)
+/tailwind.config.js
+/postcss.config.js
+/package.json
+
 ```
 
 ---
