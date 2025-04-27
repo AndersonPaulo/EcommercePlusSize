@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Menu } from "lucide-react"
+import { Link } from "react-router-dom"
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -9,15 +10,17 @@ function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <nav className="container mx-auto flex items-center justify-between p-4">
-        <div className="text-2xl font-bold text-primary">Moda Plus</div>
+        <div className="text-2xl font-bold text-primary">
+          Moda Plus
+          <Link to="/carrinho" className="ml-4">🛒</Link>
+        </div>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex flex-row gap-6 text-gray-700 font-medium">
-          <li><a href="/" className="hover:text-primary">Home</a></li>
-          <li><a href="/colecoes" className="hover:text-primary">Coleções</a></li>
-          <li><a href="/promocoes" className="hover:text-primary">Promoções</a></li>
-          <li><a href="/contato" className="hover:text-primary">Contato</a></li>
-          <li><a href="/intranet" className="hover:text-primary">Intranet</a></li>
+          <li><Link to="/" className="hover:text-primary">Home</Link></li>
+          <li><Link to="/produtos" className="hover:text-primary">Produtos</Link></li>
+          <li><Link to="/contato" className="hover:text-primary">Contato</Link></li>
+          <li><Link to="/login" className="hover:text-primary">Intranet</Link></li>
         </ul>
 
         {/* Botão hamburguer mobile */}
@@ -28,16 +31,16 @@ function Navbar() {
           <Menu size={28} />
         </button>
       </nav>
-
+      
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-white shadow p-4 space-y-3">
-          <a href="/" className="block hover:text-primary">Home</a>
-          <a href="/colecoes" className="block hover:text-primary">Coleções</a>
-          <a href="/promocoes" className="block hover:text-primary">Promoções</a>
-          <a href="/contato" className="block hover:text-primary">Contato</a>
-          <a href="/intranet" className="block hover:text-primary">Intranet</a>
+          < Link to="/" className="block hover:text-primary">Home</Link>
+          < Link to="/produtos" className="block hover:text-primary">Produtos</Link>
+          < Link to="/contato" className="block hover:text-primary">Contato</Link>
+          < Link to="/login" className="block hover:text-primary">Intranet</Link>
         </div>
+         
       )}
     </header>
   )

@@ -17,7 +17,7 @@ function Home() {
           <div className="image  text-center">
 
             <ProductCard
-              image={FishDestaque}
+              image={SecondDestaque}
               name="Blusa Casual"
               price="89,90"
             />
@@ -36,30 +36,36 @@ function Home() {
               price="89,90"
             />
              <ProductCard
-              image={FishDestaque}
+              image={SecondDestaque}
               name="Blusa Casual"
               price="89,90"
             />
            
-          </div>
-        
-          <h2 className="text-xl font-semibold mb-4">Novidades</h2>
+          </div>      
           
-          <div className="image p-2  text-center">
 
+
+        </div>
+          
+      </section>
+      <section className="p-6">
+        <h2 className="text-xl font-semibold mb-4">Novidades</h2>
+        <div className="grid grid-cols-2">
+          <div className="image  text-center">
+
+            <ProductCard
+              image={SecondDestaque}
+              name="Blusa Casual"
+              price="89,90"
+            />
              <ProductCard
-                image={FishDestaque}
-                name="Vestido Floral"
-                price="129,90"
-              />
-              <ProductCard
-                image={FishDestaque}
-                name="Macacão Plus Size"
-                price="179,90"
-              />
-
+              image={FishDestaque}
+              name="Blusa Casual"
+              price="89,90"
+            />
+            
           </div>
-          <div className="image p-2  text-center">
+          <div className="image p-2 text-center">
 
             <ProductCard
               image={FishDestaque}
@@ -67,20 +73,19 @@ function Home() {
               price="89,90"
             />
              <ProductCard
-              image={FishDestaque}
+              image={SecondDestaque}
               name="Blusa Casual"
               price="89,90"
             />
-
-          </div>
-
-            
+           
+          </div>      
           
 
+
+        </div>
           <div className="mt-10 text-center">
             <CTAButton text="Ver Mais Produtos" onClick={() => alert("Ver mais")} />
           </div>
-        </div>
       </section>
     </main>
   );
